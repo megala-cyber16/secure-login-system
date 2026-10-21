@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Login System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Secure Login System</h1>
+    <p>Create an account or login securely.</p>
+
+    <div id="registerForm">
+      <h2>Register</h2>
+      <input id="regUser" placeholder="Username" autocomplete="username">
+      <input id="regPass" type="password" placeholder="Create password" autocomplete="new-password">
+      <button onclick="register()">Register</button>
+    </div>
+
+    <div id="loginForm">
+      <h2>Login</h2>
+      <input id="loginUser" placeholder="Username" autocomplete="username">
+      <input id="loginPass" type="password" placeholder="Password" autocomplete="current-password">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <p id="message" role="status"></p>
+    <button id="logoutBtn" onclick="logout()" hidden>Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
